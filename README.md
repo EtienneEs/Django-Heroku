@@ -85,7 +85,7 @@ python manage.py runserver
 python manage.py startapp address_book
 ````
 - add app in settings.py to installed apps:
-````Python
+````python
 mysite/settings.py
 INSTALLED_APPS = [
   'django.contrib.admin',
@@ -96,9 +96,11 @@ INSTALLED_APPS = [
   'django.contrib.staticfiles',
   'address_book',
 ]
+````
 
 - create address_book/urls.py
-````python
+
+```` python
 address_book/urls.py
 
 from django.urls import path
@@ -107,9 +109,12 @@ from . import views
 urlpatterns = [
 
 ]
-````
 
-- include address_book/urls.py in mysite/urls.py:
+````  
+
+- include address_book/urls.py in mysite/urls.py:  
+
+
 ```` python
 mysite/urls.py   
 
